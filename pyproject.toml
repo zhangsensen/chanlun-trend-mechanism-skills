@@ -1,0 +1,31 @@
+[project]
+name = "chan-trend-mechanism-skill"
+version = "0.1.0"
+description = "Standalone Codex skill for deterministic multi-timeframe index structure analysis."
+requires-python = ">=3.11"
+dependencies = [
+  "pandas>=2.0",
+  "pyarrow>=14.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+  "pyright>=1.1",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.pyright]
+pythonVersion = "3.11"
+typeCheckingMode = "basic"
+include = [
+  "skills/chan-trend-mechanism/scripts",
+  "tests",
+]

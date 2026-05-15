@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chan Trend Mechanism"
+  short_description: "Multi-timeframe index structure analysis"
+  default_prompt: "Use $chan-trend-mechanism to analyze current index structure from local OHLCV data."
